@@ -1,0 +1,5 @@
+*inverter
+
+X0 Y A VPWR NWELL sky130_fd_pr__pfet_01v8 ad=6e+11p pd=3.2e+06u as=5.5e+11p ps=3.1e+06u w=1e+06u l=150000u
+X1 Y A VGND VSUBS sky130_fd_pr__nfet_01v8 ad=6e+11p pd=3.2e+06u as=5.5e+11p ps=3.1e+06u w=650000u l=150000u
+

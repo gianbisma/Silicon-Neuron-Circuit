@@ -1,0 +1,32 @@
+*comparator simulation
+
+.lib "~/software/PDKs/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+Xcomp VB VA V Vth Vbias VPWR VGND comparator
+
+.subckt comparator VB VA V Vth Vbias VPWR VGND
+X0 VB VB VGND VGND sky130_fd_pr__nfet_01v8 ad=1.2e+12p pd=6.4e+06u as=2.2e+12p ps=1.24e+07u w=1e+06u l=150000u
+X1 VA Vth VGND VGND sky130_fd_pr__nfet_01v8 ad=1.2e+12p pd=6.4e+06u as=0p ps=0u w=1e+06u l=150000u
+X2 VA VB VPWR VPWR sky130_fd_pr__pfet_01v8 ad=6e+11p pd=3.2e+06u as=1.1e+12p ps=6.2e+06u w=1e+06u l=150000u
+X3 VB V VGND VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 VB VB VPWR VPWR sky130_fd_pr__pfet_01v8 ad=6e+11p pd=3.2e+06u as=0p ps=0u w=1e+06u l=150000u
+X5 VA Vbias VGND VGND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+
+*set gnd and power
+Vgnd VGND 0 0
+Vdd VPWR VGND 1.8v
+Vth Vth VGND 1.7v
+
+
+
+.control
+run
+set color0 = white
+set color1 = black
+plot V
+.endc
+
+.end
+

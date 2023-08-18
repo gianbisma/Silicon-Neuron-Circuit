@@ -1,0 +1,109 @@
+magic
+tech sky130A
+timestamp 1686344756
+<< nwell >>
+rect -130 135 95 275
+<< nmos >>
+rect 0 0 15 100
+<< pmos >>
+rect 0 155 15 255
+<< ndiff >>
+rect -55 85 0 100
+rect -55 15 -40 85
+rect -15 15 0 85
+rect -55 0 0 15
+rect 15 85 75 100
+rect 15 15 30 85
+rect 55 15 75 85
+rect 15 0 75 15
+<< pdiff >>
+rect -55 240 0 255
+rect -55 170 -40 240
+rect -15 170 0 240
+rect -55 155 0 170
+rect 15 240 75 255
+rect 15 170 30 240
+rect 55 170 75 240
+rect 15 155 75 170
+<< ndiffc >>
+rect -40 15 -15 85
+rect 30 15 55 85
+<< pdiffc >>
+rect -40 170 -15 240
+rect 30 170 55 240
+<< psubdiff >>
+rect -110 85 -55 100
+rect -110 15 -95 85
+rect -70 15 -55 85
+rect -110 0 -55 15
+<< nsubdiff >>
+rect -110 240 -55 255
+rect -110 170 -95 240
+rect -70 170 -55 240
+rect -110 155 -55 170
+<< psubdiffcont >>
+rect -95 15 -70 85
+<< nsubdiffcont >>
+rect -95 170 -70 240
+<< poly >>
+rect 0 255 15 270
+rect 0 100 15 155
+rect 0 -15 15 0
+rect -30 -25 15 -15
+rect -30 -50 -20 -25
+rect 5 -50 15 -25
+rect -30 -60 15 -50
+<< polycont >>
+rect -20 -50 5 -25
+<< locali >>
+rect -105 240 -5 250
+rect -105 170 -95 240
+rect -70 170 -40 240
+rect -15 170 -5 240
+rect -105 160 -5 170
+rect 20 240 65 250
+rect 20 170 30 240
+rect 55 170 65 240
+rect 20 160 65 170
+rect 45 95 65 160
+rect -105 85 -5 95
+rect -105 15 -95 85
+rect -70 15 -40 85
+rect -15 15 -5 85
+rect -105 5 -5 15
+rect 20 85 65 95
+rect 20 15 30 85
+rect 55 15 65 85
+rect 20 5 65 15
+rect 45 -15 65 5
+rect -130 -25 15 -15
+rect -130 -40 -20 -25
+rect -30 -50 -20 -40
+rect 5 -50 15 -25
+rect 45 -35 95 -15
+rect -30 -60 15 -50
+<< viali >>
+rect -95 170 -70 240
+rect -40 170 -15 240
+rect -95 15 -70 85
+rect -40 15 -15 85
+<< metal1 >>
+rect -130 240 95 250
+rect -130 170 -95 240
+rect -70 170 -40 240
+rect -15 170 95 240
+rect -130 160 95 170
+rect -130 85 95 95
+rect -130 15 -95 85
+rect -70 15 -40 85
+rect -15 15 95 85
+rect -130 5 95 15
+<< labels >>
+rlabel polycont -20 -50 5 -25 1 A
+rlabel locali 45 -35 95 -15 1 Y
+rlabel metal1 -95 15 -70 85 1 VGND
+rlabel nwell -95 170 -70 240 1 VPWR
+rlabel metal1 -130 160 -95 250 1 VPWR
+rlabel metal1 -130 5 -95 95 1 VGND
+rlabel nwell -130 135 95 275 1 NWELL
+<< end >>
